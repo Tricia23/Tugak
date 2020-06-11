@@ -510,7 +510,7 @@ h1 {
 @media only screen and (max-width: 900px) {
   .banner-image {
     height: 200px;
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .banner-text-wrap {
@@ -687,5 +687,31 @@ h1 {
     margin-top: 2rem;
     padding: 12px 15px;
     width: 88%;
+  }
+
+  .contact-us-button {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background-color: #138b89;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .banner-image {
+    height: 185px;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .banner-image {
+    height: 280px;
+    margin-top: 2rem;
   }
 }
