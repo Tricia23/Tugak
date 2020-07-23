@@ -6,6 +6,44 @@ body {
   padding: 0;
   font-family: "Lato";
 }
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 3rem;
+}
+
+.nav-list li {
+  margin-right: 2.5rem;
+  text-transform: uppercase;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-list li a {
+  margin-bottom: 7px;
+  padding-bottom: 7px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-list li a:hover:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  background: #ffffffe8;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  left: calc(50% - 4px);
+}
 
 header {
   position: relative;
@@ -70,7 +108,7 @@ header div {
 }
 
 .banner-text-wrap {
-  margin-top: 8rem;
+  margin-top: 5rem;
   position: absolute;
   margin-left: 10rem;
 }
@@ -302,15 +340,26 @@ textarea {
   margin: auto;
   border-radius: 5px;
   padding: 2rem 2rem 4rem 2rem;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.306764);
-  display: flex;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.306764);
+  display: block;
   justify-content: center;
 }
+
+.location-wrap-inner {
+  display: flex;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 3rem;
+}
+
 .location-wrap h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   font-size: 30px;
-  font-family: serif;
+  font-family: "Lato";
   color: #333333;
   margin-left: 3rem;
+  text-align: center;
+  letter-spacing: 0.8;
 }
 small {
   font-family: "Lato";
@@ -341,6 +390,9 @@ small {
   margin-left: 3rem;
   display: block;
   line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
 }
 .wrapped {
   width: 100%;
@@ -372,7 +424,7 @@ small {
   width: 90%;
   border: 2px solid #eaf2fd;
   border-radius: 4px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
 .contact-button {
   margin-top: 3rem;
@@ -394,8 +446,19 @@ small {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("./images/core.png");
-  /* margin-right: 25px; */
+
   margin-top: 1rem;
+}
+.logo {
+  height: 85px;
+  width: 150px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/tugak.png");
+  display: block;
+  margin-left: 5rem;
+  margin-top: 10px;
 }
 
 .divider {
@@ -517,6 +580,28 @@ small {
   font-size: 11px;
   display: block;
   margin-top: 1rem;
+}
+
+.call-image {
+  background-image: url("./images/phone.png");
+  margin-top: 7px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.number {
+  display: flex;
+  margin-top: 10px;
+}
+
+.number a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 12px;
+  color: #207dff;
 }
 
 @media only screen and (max-width: 900px) {

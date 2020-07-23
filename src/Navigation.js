@@ -5,8 +5,19 @@ function Navigation() {
   return (
     <div>
       <header>
-        <div>
-          <span className="logo-text">Logo Image</span>
+        <div className="nav-wrap">
+          <span className="logo"></span>
+          <ul className="nav-list">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#service">Our Services</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
         <svg
           id="svg"

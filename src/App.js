@@ -123,7 +123,7 @@ function App() {
         </div>
       </section>
       <section className="list-container">
-        <div className="list-wrap">
+        <div id="service" className="list-wrap">
           <div className="list-left-img topper">
             <div className="list-left">
               <h3>Our Services</h3>
@@ -167,72 +167,96 @@ function App() {
       </section>
       <section className="location-container" id="contact">
         <div className="location-wrap">
-          <div className="location-left">
-            <h3>Our Locations</h3>
-            <ul className="location-list">
-              <li>
-                Tugak Pharmacy Marketsquare Supermarket #279 Peter Odili Rd
-                Trans Amadi Port Harcourt (08098000119)
-              </li>
-              <li>
-                Tugak Pharmacy #19 Peter Odili Rd Emma Estate Junction Okujagu
-                Port Harcourt (08091946232)
-              </li>
-              <li>
-                Tugak Pharmacy Marketsquare Supermarket Woji Rd GRA Port
-                Harcourt (090887506304)
-              </li>
-              <li>
-                Tugak Pharmacy Marketsquare/Kilimanjaro complex Okporo Rd –
-                Rumudara Junction (09087506314)
-              </li>
-              <li>
-                Tugak Pharmacy Marketsquare/Kilimanjaro complex Orlu Rd Owerri
-                (09087506306)
-              </li>
-            </ul>
-            <h3>Hours of Operation</h3>
-            <span>Mondays-Saturdays: 8am-9.30pm</span>
-            <span>Sundays: 12pm-9pm</span>
-          </div>
-          <div className="location-right">
-            <div className="form-wrap">
-              <h3 className="contact-title"> Contact Us</h3>
-              <form>
-                <div className="grouped">
-                  <label className="contact-label" for="zip">
-                    <small>Email</small>
-                  </label>
-                  <input
-                    name="email"
-                    placeholder="John.doe@gmail.com"
-                    type="text"
-                    className="contact-input"
-                  />
-                  <label className="contact-label" for="zip">
-                    <small>Subject</small>
-                  </label>
-                  <input
-                    name="email"
-                    placeholder="enquiries"
-                    type="text"
-                    className="contact-input"
-                  />
-                  <label className="contact-label" for="zip">
-                    <small>Message</small>
-                  </label>
-                  <textarea
-                    className="contact-input"
-                    cols="30"
-                    rows="5"
-                    placeholder="Type your message here"
-                  ></textarea>
-                  <button type="submit" className="contact-button">
-                    Submit
-                  </button>
-                </div>
-              </form>
+          <div className="location-wrap-inner">
+            <div className="location-left">
+              <h3>Our Locations</h3>
+              <ul className="location-list">
+                <li>
+                  Tugak Pharmacy Marketsquare Supermarket #279 Peter Odili Rd
+                  Trans Amadi Port Harcourt
+                  <div className="number">
+                    <div className="call-image"></div>
+                    <a href="tel:08098000119">08098000119</a>
+                  </div>
+                </li>
+                <li>
+                  Tugak Pharmacy #19 Peter Odili Rd Emma Estate Junction Okujagu
+                  Port Harcourt
+                  <div className="number">
+                    <div className="call-image"></div>
+                    <a href="tel:08098000119">08091946232</a>
+                  </div>
+                </li>
+                <li>
+                  Tugak Pharmacy Marketsquare Supermarket Woji Rd GRA Port
+                  Harcourt
+                  <div className="number">
+                    <div className="call-image"></div>
+                    <a href="tel:08098000119">090887506304</a>
+                  </div>
+                </li>
+                <li>
+                  Tugak Pharmacy Marketsquare/Kilimanjaro complex Okporo Rd –
+                  Rumudara Junction
+                  <div className="number">
+                    <div className="call-image"></div>
+                    <a href="tel:08098000119">09087506314</a>
+                  </div>
+                </li>
+                <li>
+                  Tugak Pharmacy Marketsquare/Kilimanjaro complex Orlu Rd Owerri
+                  <div className="number">
+                    <div className="call-image"></div>
+                    <a href="tel:08098000119">09087506306</a>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <div className="location-right">
+              <div className="form-wrap">
+                <h3 className="contact-title"> Contact Us</h3>
+                <form>
+                  <div className="grouped">
+                    <label className="contact-label" for="zip">
+                      <small>Email</small>
+                    </label>
+                    <input
+                      name="email"
+                      placeholder="John.doe@gmail.com"
+                      type="text"
+                      className="contact-input"
+                    />
+                    <label className="contact-label" for="zip">
+                      <small>Subject</small>
+                    </label>
+                    <input
+                      name="email"
+                      placeholder="enquiries"
+                      type="text"
+                      className="contact-input"
+                    />
+                    <label className="contact-label" for="zip">
+                      <small>Message</small>
+                    </label>
+                    <textarea
+                      className="contact-input"
+                      cols="30"
+                      rows="5"
+                      placeholder="Type your message here"
+                    ></textarea>
+                    <button type="submit" className="contact-button">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+          <div>
+            <h3>Hours of Operation</h3>
+            <span>Mondays - Saturdays: 8am - 9.30pm</span>
+            <span>Sundays: 12pm - 9pm</span>
           </div>
         </div>
       </section>
@@ -250,7 +274,7 @@ function App() {
                   <Link to={"/"} className="email"></Link>
                 </div>
                 <span className="rights">
-                  &copy; 2020 &nbsp;| made by patricia.im
+                  &copy; 2020 &nbsp;| All rights reserved
                 </span>
               </div>
               <div className="footer-overlay2"></div>
