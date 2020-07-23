@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import "./App.css";
 
@@ -235,25 +235,28 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="footer-section">
-        <footer>
-          <div className="footer-content">
-            <div className="footer-overlay"></div>
-            <div className="footer-text">
-              <h4>Tugak Pharmacy</h4>
-              <span>Your well being is our main priority</span>
-              <div className="socials">
-                <a href className="facebook"></a>
-                <a href className="email"></a>
+      <Router>
+        <section className="footer-section">
+          <footer>
+            <div className="footer-content">
+              <div className="footer-overlay"></div>
+              <div className="footer-text">
+                <h4>Tugak Pharmacy</h4>
+                <span>Your well being is our main priority</span>
+
+                <div className="socials">
+                  <Link to={"/"} className="facebook"></Link>
+                  <Link to={"/"} className="email"></Link>
+                </div>
+                <span className="rights">
+                  &copy; 2020 &nbsp;| made by patricia.im
+                </span>
               </div>
-              <span className="rights">
-                &copy; 2020 &nbsp;| made by patricia.im
-              </span>
+              <div className="footer-overlay2"></div>
             </div>
-            <div className="footer-overlay2"></div>
-          </div>
-        </footer>
-      </section>
+          </footer>
+        </section>
+      </Router>
     </div>
   );
 }
