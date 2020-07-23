@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
 }
 
 header {
@@ -113,11 +113,15 @@ h1 {
 }
 
 .about-us-content p {
-  line-height: 1.7;
+  line-height: 1.8;
   color: #595959;
-  font-family: sans-serif;
+  font-family: "Lato";
   letter-spacing: 0.7px;
   width: 95%;
+}
+
+textarea {
+  font-family: "Lato";
 }
 
 .about-us-content h1 {
@@ -184,7 +188,7 @@ h1 {
 
 .our-vission p {
   color: #595959;
-  width: 49%;
+  width: 64%;
   margin: auto;
   font-family: sans-serif;
   letter-spacing: 0.7px;
@@ -195,7 +199,7 @@ h1 {
 
 .our-mission p {
   color: #595959;
-  width: 49%;
+  width: 60%;
   margin: auto;
   font-family: sans-serif;
   letter-spacing: 0.7px;
@@ -254,7 +258,7 @@ h1 {
 .list-right li {
   margin: 10px auto;
   color: #595959;
-  font-family: sans-serif;
+  font-family: "Lato";
   letter-spacing: 0.7px;
   line-height: 1.6;
   font-size: 14px;
@@ -263,7 +267,7 @@ h1 {
 .list-left li {
   margin: 20px auto;
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: "Lato";
   letter-spacing: 0.7px;
   line-height: 1.6;
   font-size: 15px;
@@ -297,7 +301,7 @@ h1 {
   width: 80%;
   margin: auto;
   border-radius: 5px;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.306764);
   display: flex;
   justify-content: center;
@@ -309,7 +313,7 @@ h1 {
   margin-left: 3rem;
 }
 small {
-  font-family: serif;
+  font-family: "Lato";
   color: #595959;
 }
 
@@ -320,7 +324,7 @@ small {
 .location-wrap li {
   font-size: 18px;
   color: #595959;
-  font-family: serif;
+  font-family: "Lato";
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 28px;
@@ -333,7 +337,7 @@ small {
 .location-wrap span {
   font-size: 18px;
   color: #595959;
-  font-family: serif;
+  font-family: "Lato";
   margin-left: 3rem;
   display: block;
   line-height: 1.5;

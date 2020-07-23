@@ -172,23 +172,23 @@ function App() {
             <ul className="location-list">
               <li>
                 Tugak Pharmacy Marketsquare Supermarket #279 Peter Odili Rd
-                Trans Amadi Port Harcourt 08098000119
+                Trans Amadi Port Harcourt (08098000119)
               </li>
               <li>
                 Tugak Pharmacy #19 Peter Odili Rd Emma Estate Junction Okujagu
-                Port Harcourt 08091946232
+                Port Harcourt (08091946232)
               </li>
               <li>
                 Tugak Pharmacy Marketsquare Supermarket Woji Rd GRA Port
-                Harcourt 090887506304
+                Harcourt (090887506304)
               </li>
               <li>
                 Tugak Pharmacy Marketsquare/Kilimanjaro complex Okporo Rd –
-                Rumudara Junction 09087506314
+                Rumudara Junction (09087506314)
               </li>
               <li>
                 Tugak Pharmacy Marketsquare/Kilimanjaro complex Orlu Rd Owerri
-                09087506306
+                (09087506306)
               </li>
             </ul>
             <h3>Hours of Operation</h3>
@@ -225,6 +225,7 @@ function App() {
                     className="contact-input"
                     cols="30"
                     rows="5"
+                    placeholder="Type your message here"
                   ></textarea>
                   <button type="submit" className="contact-button">
                     Submit
